@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria & Brody Year Picker</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Firebase SDK v8.2.0 -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-firestore.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="column" id="columnMaria">
+            <h2>Maria's Year</h2>
+            <p><strong>Year:</strong> <span id="yearMaria"></span></p>
+            <p><strong>Region:</strong> <span id="regionMaria"></span></p>
+            <ul id="questionsMaria"></ul>
+        </div>
+        <div class="column" id="columnBrody">
+            <h2>Brody's Year</h2>
+            <p><strong>Year:</strong> <span id="yearBrody"></span></p>
+            <p><strong>Region:</strong> <span id="regionBrody"></span></p>
+            <ul id="questionsBrody"></ul>
+        </div>
+    </div>
+    <div class="button-container">
+        <button onclick="generateData()">Generate New Year</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
